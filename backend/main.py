@@ -23,7 +23,8 @@ app.add_middleware(
     allow_origins=
     [
         "http://localhost:3000",
-        "https://verite-research-assistant.vercel.app"
+        "https://verite-research-assistant.vercel.app",
+        "https://5803-13-201-67-124.ngrok-free.app"
     ], 
     allow_credentials=True,
     allow_methods=["*"],
