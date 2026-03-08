@@ -20,7 +20,11 @@ app = FastAPI(title="Verité Chatbot API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Lock this to your Vercel URL in production
+    allow_origins=
+    [
+        "http://localhost:3000",
+        "https://verite-research-assistant.vercel.app/"
+    ], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
