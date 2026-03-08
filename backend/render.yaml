@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: verite-chatbot-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: FAISS_INDEX_PATH
+        value: ./faiss_index
+      - key: MEMORY_DB_PATH
+        value: ./memory.db
