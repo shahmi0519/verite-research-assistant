@@ -9,3 +9,5 @@ rank-bm25==0.2.2
 pypdf==4.2.0
 google-generativeai==0.5.4
 python-dotenv==1.0.1
+langchain-huggingface==0.0.3
+sentence-transformers==3.0.1
