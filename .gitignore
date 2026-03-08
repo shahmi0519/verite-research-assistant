@@ -2,7 +2,7 @@ __pycache__/
 venv/
 .env
 backend/pdfs/
-# backend/faiss_index/
+backend/faiss_index/
 *.db
 node_modules/
 dist/
