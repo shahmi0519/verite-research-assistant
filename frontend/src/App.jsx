@@ -119,6 +119,7 @@ export default function App() {
   return (
     <div className="app">
 
+
       {/* Sidebar */}
       <aside className="sidebar">
 
@@ -180,7 +181,7 @@ export default function App() {
 
         </div>
 
-        {/* Suggestions — only on first load */}
+        {/* Suggestions for first load */}
         {messages.length === 1 && (
           <div className="suggestions">
             {suggestions.map(q => (
