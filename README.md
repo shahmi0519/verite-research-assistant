@@ -227,6 +227,12 @@ VITE_API_URL=http://localhost:8000
 
 ---
 
+## Preview
+
+![Vera answering a research question](Screenshot-of-UI.png)
+
+---
+
 ## Known Limitations
 
 **User Identity**: Currently uses an anonymous browser-based ID stored in localStorage. This means long-term memory works on the same browser but resets if browser data is cleared. In production, this would be replaced with proper authentication (OAuth, JWT) to enable true cross-device persistent memory.
