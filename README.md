@@ -36,7 +36,7 @@ User → React Frontend (Vercel)
 | Citations | Title, page number, chunk preview — clickable in UI |
 | Out-of-scope | Polite decline and redirect |
 | Borderline questions | Define concept + Verité-specific answer |
-| Deployment | Frontend → Vercel · Backend → AWS EC2 t2.micro |
+| Deployment | Frontend → Vercel · Backend → AWS EC2 t3.small |
 
 ---
 
@@ -52,7 +52,7 @@ User → React Frontend (Vercel)
 | Framework | LangChain |
 | Backend | FastAPI + Uvicorn |
 | Frontend | React + Vite |
-| Deployment | AWS EC2 t2.small + Vercel |
+| Deployment | AWS EC2 t3.small + Vercel |
 | HTTPS Tunnel | Ngrok static domain |
 
 ---
@@ -155,8 +155,8 @@ VITE_API_URL=http://localhost:8000
 
 ## Deployment
 
-### Backend — AWS EC2 t2.micro
-1. Launch Ubuntu 22.04 t2.small instance (free tier)
+### Backend — AWS EC2 t3.small
+1. Launch Ubuntu 22.04 t3.small instance (free tier)
 2. SSH in and install Python 3.10
 3. Clone repo, set up venv, install requirements
 4. Upload FAISS index via SCP
